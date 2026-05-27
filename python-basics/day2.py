@@ -2,19 +2,18 @@
 
 print("=====Food and Calories Tracker=====")
 
-foods = ["eggs", "chicken", "rice", "mixed vegies", "Sandwich", "Coffee"]
-calories = [364, 204, 204, 42, 420, 280]
+foods = ["eggs", "chicken breast", "salad"]
 
-for i in range(len(foods)):
-    print(f"{foods[i]} → {calories[i]} calories")
+calories = [280, 400, 150]
 
-total = 0
+print(foods[0], "-", calories[0], "calories")
+print(foods[1], "-", calories[1], "calories")
+print(foods[2], "-", calories[2], "calories")
 
-for x in range(len(calories)):
-    total += calories[x]
-print("Total calories consumed = ", total)
+total = calories[0] + calories[1] + calories[2]
+print("Total Calories: ", total)
 
 if total > 2000:
-    print("You have consumed more than 2000 calories today. Consider exercising to burn some calories.")
+    print("Too many calories")
 else:
-    print("You have consumed less than 2000 calories today. Keep up the good work!")
+    print("Good calorie intake")
